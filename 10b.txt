@@ -15,7 +15,7 @@ def display_weather_data(weather_data):
  print("Description:", weather_data["weather"][0]["description"])
 if __name__ == "__main__":
  # Replace with your OpenWeatherMap API key
- api_key = "Google Maps API"
+ api_key = "b2754f466b582eed76743bc98c50b04d"
  city = input("Enter city name: ")
  weather_data = fetch_weather_data(api_key, city)
  if "cod" in weather_data and weather_data["cod"] == 200:
