@@ -1,30 +1,60 @@
-import requests
+from openpyxl import Workbook
+from openpyxl.styles import Font
 
-def fetch_weather_data(api_key, city):
-    base_url = "http://api.openweathermap.org/data/2.5/weather"
-    params = {
-        "q": city,
-        "appid": api_key,
-        "units": "metric"  # You can change this to "imperial" for Fahrenheit
-    }
-    response = requests.get(base_url, params=params)
-    weather_data = response.json()
-    return weather_data
+wb = Workbook()
+sheet = wb.active
+sheet.title = "Language"
+wb.create_sheet(title="Capital")
 
-def display_weather_data(weather_data):
-    if "cod" in weather_data and weather_data["cod"] == 200:
-        print("Weather in", weather_data["name"])
-        print("Temperature:", weather_data["main"]["temp"], "°C")
-        print("Description:", weather_data["weather"][0]["description"])
-    else:
-        print("City not found or error fetching weather data.")
+lang = ["Kannada", "Telugu", "Tamil"]
+state = ["Karnataka", "Telangana", "Tamil Nadu"]
+capital = ["Bengaluru", "Hyderabad", "Chennai"]
+code = ['KA', 'TS', 'TN']
 
-if  __name__ == "__main__":
-    # Replace "your_actual_api_key_here" with the provided example API key
-    api_key = "b2754f466b582eed76743bc98c50b04d"
-    city = input("Enter city name: ")
-    weather_data = fetch_weather_data(api_key, city)
-    if "cod" in weather_data and weather_data["cod"] == 200:
-         display_weather_data(weather_data)
-    else:
-         print("City not found or error fetching weather data.")
+sheet.cell(row=1, column=1).value = "State"
+sheet.cell(row=1, column=2).value = "Language"
+sheet.cell(row=1, column=3).value = "Code"
+
+ft = Font(bold=True)
+for row in sheet["A1:C1"]:
+    for cell in row:
+        cell.font = ft
+
+for i in range(2, 5):
+    sheet.cell(row=i, column=1).value = state[i - 2]
+    sheet.cell(row=i, column=2).value = lang[i - 2]
+    sheet.cell(row=i, column=3).value = code[i - 2]
+
+sheet = wb["Capital"]
+
+sheet.cell(row=1, column=1).value = "State"
+sheet.cell(row=1, column=2).value = "Capital"
+sheet.cell(row=1, column=3).value = "Code"
+
+ft = Font(bold=True)
+for row in sheet["A1:C1"]:
+    for cell in row:
+        cell.font = ft
+
+for i in range(2, 5):
+    sheet.cell(row=i, column=1).value = state[i - 2]
+    sheet.cell(row=i, column=2).value = capital[i - 2]
+    sheet.cell(row=i, column=3).value = code[i - 2]
+
+wb.save("demo.xlsx")
+
+sheet = wb["Capital"]
+srchCode = input("Enter state code for finding capital: ")
+for i in range(2, 5):
+    data = sheet.cell(row=i, column=3).value
+    if data == srchCode:
+        print("Corresponding capital for code", srchCode, "is", sheet.cell(row=i, column=2).value)
+
+sheet = wb["Language"]
+srchCode = input("Enter state code for finding language: ")
+for i in range(2, 5):
+    data = sheet.cell(row=i, column=3).value
+    if data == srchCode:
+        print("Corresponding language for code", srchCode, "is", sheet.cell(row=i, column=2).value)
+
+wb.close()
