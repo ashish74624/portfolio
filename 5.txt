@@ -1,0 +1,76 @@
+LAB5.css
+p,table,li,{
+font-family: "lucida calligraphy", arial, 'sans serif';
+margin-left: 10pt;
+}
+p { word-spacing: 5px; }
+body { background-color:rgb(200,255,205); }
+p,li,td { font-size: 75%;}
+td { padding: 0.5cm; }
+th {
+text-align:center;
+font-size: 85%;
+}
+h1, h2, h3, hr {color:#483d8b;}
+table
+{
+border-style: outset;
+background-color: rgb(100,255,105);
+}
+li {list-style-type: lower-roman;}
+span
+{
+color:blue;
+background-color:pink;
+font-size: 29pt;
+font-style: italic;
+font-weight: bold;
+}
+LAB5.html
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Lab5.css" />
+<title> Lab program5 </title>
+</head>
+<body>
+<h1>This header is 36 pt</h1>
+<h2>This header is blue</h2>
+<p>This paragraph has a left margin of 50 pixels</p>
+<table border="4" width="5%"> <!-- table with colour name &code -->
+<tr>
+<th width="204">Colour Name </th>
+<th>Hexadecimal code</th>
+</tr>
+<tr>
+<td width="204">Black</td>
+<td>000000</td>
+</tr>
+<tr>
+<td width="204">Silver</td>
+<td>C0C0C0</td>
+</tr>
+<tr>
+<td width="204">Gray</td>
+<td>808080</td>
+</tr>
+<tr>
+<td width="204">White</td>
+<td>FFFFFF</td>
+</tr>
+</table>
+<hr> <!-- horizontal line -->
+<h3>Programming Languages</h3>
+<ol> <!-- ordered list -->
+<li> C Programming</li>
+<li> Object Oriented Programming </li>
+<li> Python Programming</li>
+</ol>
+<hr> <!-- horizontal line -->
+<h3>Span Element</h3>
+<p>
+The span tag is an <span>inline tag </span>used to mark up a <span>part of atext</span>or part 
+of document.</p>
+</p>
+</body>
+</html>

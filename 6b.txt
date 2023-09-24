@@ -1,19 +1,41 @@
-import os
-import zipfile
-def create_zip(folder_path, zip_file_name):
-    try:
-        with zipfile.ZipFile(zip_file_name, "w") as zip_file:
-            for root, _, files in os.walk(folder_path):
-                 for file in files:
-                        file_path = os.path.join(root, file)
-                        arcname = os.path.relpath(file_path, folder_path)
-                        zip_file.write(file_path, arcname)
-            print("ZIP file '{zip_file_name}' created successfully.")
-    except Exception as e:
-        print(f"Error occurred: {e}")
-
-if __name__ == "__main__":
-    folder_path = input("Enter the folder path to zip: ")
-    zip_file_name = input("Enter the name of the ZIP file to create: ")
-    create_zip(folder_path, zip_file_name)            
-
+<html>
+ <head>
+ <title>WT Lab manual program no. 3</title>
+ </head>
+ <style>
+h1
+{
+color: red;
+text-align: center;
+}
+.textbox1
+{
+color: blue;
+font-size: 30px;
+font-weight: bold;
+}
+ </style>
+<body>
+ <center>
+ <h1> Select the country name to find its capital</h1>
+ <form name="myform">
+ Select Country <select name="country" id="sbox1" onClick="myFunction()" required>
+ <option value=""></option>
+ <option value="NEW DELHI">INDIA</option>
+ <option value="CANBERRA">AUSTRALIA</option>
+ <option value="WASHINGTON D.C">AMERICA</option>
+ <option value="LONDON">UNITEDKINGDOM</option>
+ <option value="BERLIN">GERMANY</option>
+ </select><br><br>
+ Capital <input type="text" class="textbox1" id="sbox2">
+ </form>
+ </center>
+<script>
+function myFunction()
+{
+ var a=document.getElementById("sbox1").value;
+ document.getElementById("sbox2").value=a; 
+}
+</script> 
+</body>
+ </html>

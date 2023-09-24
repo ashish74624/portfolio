@@ -1,43 +1,39 @@
-import math
-class Shape:
- def __init__(self):
- self.area = 0
- self.name = ""
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript">
+var str = prompt("Enter the Input"," ");
+ if(!(isNaN(str)))
+{
+var num,rev=0,remainder; 
+num = parseInt(str);
+while(num!=0) 
+{
+remainder = num%10;
+num = parseInt(num/10);
+rev = rev * 10 + remainder;
+ }
+
+alert("Reverse of "+str+" is "+rev);
+
+}
+
+else
+{
+str = str.toUpperCase();
+for(var i = 0; i < str.length; i++) 
+{ 
+var chr = str.charAt(i);
+if(chr == 'A' || chr == 'E' || chr == 'I' || chr == 'O' || chr == 'U')break;
+}
+if( i < str.length )
+alert("The position of the left most vowel is "+(i+1));
  
- def showArea(self):
- print("The area of the", self.name, "is", self.area, "units")
-class Circle(Shape):
- def __init__(self, radius):
- self.area = 0
- self.name = "Circle"
- self.radius = radius
- 
- def calcArea(self):
- self.area = math.pi * self.radius * self.radius
-class Rectangle(Shape):
- def __init__(self, length, breadth):
- self.area = 0
- self.name = "Rectangle"
- self.length = length
- self.breadth = breadth
- 
- def calcArea(self):
- self.area = self.length * self.breadth
-class Triangle(Shape):
- def __init__(self, base, height):
- self.area = 0
- self.name = "Triangle"
- self.base = base
- self.height = height
- 
- def calcArea(self):
- self.area = self.base * self.height / 2
-c1 = Circle(5)
-c1.calcArea()
-c1.showArea()
-r1 = Rectangle(5, 4)
-r1.calcArea()
-r1.showArea()
-t1 = Triangle(3, 4)
-t1.calcArea()
-t1.showArea()
+else
+alert("No vowel found in the entered string");
+
+
+}
+</script>
+ </body>
+</html>

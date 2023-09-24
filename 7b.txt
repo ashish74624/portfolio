@@ -1,27 +1,45 @@
-class Employee:
- def __init__(self):
- self.name = ""
- self.empId = ""
- self.dept = ""
- self.salary = 0
- 
- def getEmpDetails(self):
- self.name = input("Enter Employee name: ")
- self.empId = input("Enter Employee ID: ")
- self.dept = input("Enter Employee Dept: ")
- self.salary = int(input("Enter Employee Salary: "))
- 
- def showEmpDetails(self):
- print("Employee Details")
- print("Name:", self.name)
- print("ID:", self.empId)
- print("Dept:", self.dept)
- print("Salary:", self.salary)
- 
- def updtSalary(self):
- self.salary = int(input("Enter new Salary: "))
- print("Updated Salary:", self.salary)
-e1 = Employee()
-e1.getEmpDetails()
-e1.showEmpDetails()
-e1.updtSalary()
+<!DOCTYPE html>
+ <html>
+<head>
+<style>
+table, td, th
+{
+border: 1px solid black; width: 33%;
+text-align: center; background-color: DarkGray; border-collapse:collapse;
+}
+table { margin: auto; } input { text-align:right; }
+</style>
+<script type="text/javascript"> function calc(clicked_id)
+{
+var val1 = parseFloat(document.getElementById("value1").value);
+ var val2 = parseFloat(document.getElementById("value2").value);
+ if(isNaN(val1)||isNaN(val2))
+alert("ENTER VALID NUMBER");
+else if(clicked_id=="add") document.getElementById("answer").value=val1+val2;
+else if(clicked_id=="sub") document.getElementById("answer").value=val1-
+val2;
+else if(clicked_id=="mul") document.getElementById("answer").value=val1*val2;
+else if(clicked_id=="div")
+document.getElementById("answer").value=val1/val2;
+}
+function cls()
+{
+ value1.value="0"; 
+value2.value="0";
+ answer.value="";
+ }
+</script>
+</head>
+<body>
+<table>
+ <tr><th colspan="4"> SIMPLE CALCULATOR </th></tr>
+<tr><td>value1</td><td><input type="text" id="value1" value="0"/></td> <td>value2</td><td><input type="text" id="value2" value="0"/> </td></tr> <tr><td><input type="button" value="Addition" id = "add" onclick="calc(this.id)"/></td>
+<td><input type="button" value="Subtraction" id = "sub" onclick="calc(this.id)"/></td>
+<td><input type="button" value="Multiplication" id = "mul"
+onclick="calc(this.id)"/></td>
+<td><input type="button" value="Division" id ="div" onclick="calc(this.id)"/></td></tr>
+<tr><td>Answer:</td><td> <input type="text" id="answer" value="" disabled/></td>
+<td colspan="2"><input type="button" value="CLEAR ALL" onclick="cls()"/></td> </tr>
+</table>
+</body>
+</html>

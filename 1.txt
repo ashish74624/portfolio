@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html >
+<head>
+ <title>Time Table</title>
+</head>
+<body>
+ <B><center><h3>RNS INSTITUTE OF TECHNOLOGY<br>DEPARTMENT OF 
+INFORMATION SCIENCE AND ENGINEERING<br>EFFECTIVE FROM: 
+01.07.23<br></center></b></h3>
+ <table border="2" width="75%" cellspacing="2" cellpadding="25"align=center>
+ <h3><caption align=left>Class: III C&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ R.No:103</caption>
+ </h3><thead>
+ <tr>
+ <th >Periods</th>
+ <th ROWSPAN=2>1 <br>8.40-9.40</th>
+ <th ROWSPAN=2>2<br>9.40-10.40</th>
+ <th ROWSPAN=2>3<br>11.00-12.00</th>
+ <th ROWSPAN=2>4<br>12.00-13.00</th>
+ <th ROWSPAN=2>5<br>13.00-14.00</th>
+ <th ROWSPAN=2>6<br>14.00-15.00</th>
+ <th ROWSPAN=2>7<br>15.00-16.00</th>
+ </tr>
+ <tr>
+ <th> Days</th></thead><tbody>
+ <tr>
+ <th>Monday</th>
+ <td>Maths</td>
+ <td>MCES</td>
+ <td bgcolor = "yellow">AEC</td>
+ <td>OS</td>
+ <td COLSPAN=3><center>*</center></td>
+ </tr>
+ <tr>
+<th>TuesDay</th>
+ <td>MCES</td>
+ <td>OS</td>
+ <td>DAA</td>
+ <td>Maths</td>
+ <td bgcolor = "grey" COLSPAN=2><center>DAA/MCES Lab</center></td>
+ <td>*</td>
+ </tr>
+ <tr>
+ <th>Wednesday</th>
+ <td COLSPAN =2 bgcolor="grey"><center>MCES/Python Lab</center></td>
+ <td>DAA</td>
+ <td>MCES</td>
+ <td bgcolor="yellow">AEC</td>
+ <td bgcolor="yellow">UHV</td>
+ <td>Bio</td>
+ </tr>
+ <tr>
+ <th>Thursday</th>
+ <td>MCES</td>
+ <td>Maths</td>
+ <td COLSPAN=2 bgcolor = "grey"><center>Python/DAA Lab</center></td>
+ <td COLSPAN=3 bgcolor="cyan"><center>Center of Excellence(13.40-17.30)</td>
+ </tr>
+ <tr>
+ <th>Friday</th>
+ <td>OS</td>
+ <td>Maths</td>
+ <td>Bio</td>
+ <td>DAA</td>
+ <td>DAA</td>
+ <td bgcolor = "yellow">CIP</td>
+ </tr>
+ <tr>
+ <th>Saturday</th>
+ <td>DAA</td>
+ <td>OS</td>
+ <td>MCES</td>
+ <td>Maths</td>
+ <td colspan=3><center>*</center></td>
+ </tr>
+ </body>
+ </table>
+</body>
+</html>
