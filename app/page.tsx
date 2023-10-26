@@ -1,8 +1,6 @@
 import React from "react"
 import { Fugaz_One } from "next/font/google"
 import { Noto_Sans_Javanese } from "next/font/google"
-import Image from "next/image"
-import Card from "./Components/Card"
 
 
 const Nsj = Noto_Sans_Javanese({
@@ -16,35 +14,21 @@ const fo= Fugaz_One({
 
 export default function Home() {
 
-  const projects = [
-    {id:1,title:"Solids",desc:"An Ecommerce website",image:"https://picsum.photos/200/300",link:"https://solids.vercel.app/",github:"https://github.com/ashish74624/Ecommerce"},
-    {id:2,title:"Poloroid",desc:"A Social Media website",image:"https://picsum.photos/200/300",link:"https://poloroid.vercel.app/",github:"https://github.com/ashish74624/MERNsocial"},
-    {id:3,title:"Image Upload",desc:"Image upload & retrieve website",image:"https://picsum.photos/200/300",link:"https://imagedrop.vercel.app/",github:"https://github.com/ashish74624/ImageUploader"},
-    {id:4,title:"Weaher",desc:"A Simple weather website",image:"https://picsum.photos/200/300",link:"https://ashish74624.github.io/weather/",github:"https://github.com/ashish74624/weather"},
-    {id:5,title:"Upfront",desc:"A News website",image:"https://picsum.photos/200/300",link:"https://upfront-fawn.vercel.app/",github:"https://github.com/ashish74624/UpFront"}
-  ]
-
   return (
-    <>
-    <main className={`${Nsj.className} h-max w-screen overflow-x-hidden overflow-y-scroll bg-white `}>
-      <section className="w-screen h-96 relative">
-        <div className={` w-[70vw] left-40 pt-24 text-5xl text-purple-600 absolute`}>
-        <span className={`${fo.className}`}>Hello There !</span> I am Ashish Kumar <br />
-          I build interactive full stack websites that run across platforms and devices
-        </div>
-        <Image className=" w-screen h-96" src={'/1.webp'} width={1500} height={390} alt="Bg" />
-      </section>
-      <section className=" w-screen bg-purple-600 h-max pb-4">
-        <div className=" w-[70vw] mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 pt-10 lg:gap-6  gap-4">
-          <div className="lg:col-span-3 md:col-span-2 col-span-1 text-4xl text-gray-900 pb-2 ">My Projects</div>
-          {projects.map((item)=>(
-            <div key={item.id}>
-              <Card title={item.title} link={item.link} desc={item.desc} image={item.image} github={item.github}/>
-            </div>
-          ))}
-        </div>
-      </section>
+    <main className='bg-[#0F172A] h-screen w-screen overflow-x-hidden overflow-y-scroll relative flex justify-center items-center'>
+        <div className='bg-[#6a8bd7] absolute  w-80 h-80 rounded-full blur-lg bottom-[75vh] right-[85vw] animate-pulse'></div>
+        <div className='bg-[#6a8bd7] absolute  w-80 h-80 rounded-full blur-lg bottom-[75vh] right-[85vw] animate-pulse'></div>
+        <div className='bg-[#E31B6D] absolute  w-20 h-20 rounded-full blur-md animate-bounce bottom-1 right-4'></div>
+        <div className='z-10 flex flex-col justify-center w-max h-max border-white border rounded-lg px-10 py-8 relative '>
+            <span className=' w-4 h-4 rounded-full bg-white absolute bottom-[194px] left-[609px] animate-ping'></span>
+            <p className='text-white text-4xl w-max '>
+                Hello There, <span className='text-[#E31B6D]'>I'm Ashish Kumar</span>. <br />
+                I am a full stack web Developer.
+            </p>
+            <button className=' px-4 py-2 rounded-lg text-lg text-white mx-auto border-white border mt-4 hover:bg-[#E31B6D] transition-all duration-200'>
+                View my Work
+            </button>
+        </div>  
     </main>
-    </>
   )
 }
