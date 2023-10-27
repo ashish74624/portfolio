@@ -2,6 +2,7 @@ import React from "react"
 import { Fugaz_One } from "next/font/google"
 import { Noto_Sans_Javanese } from "next/font/google"
 import Button from "./Components/Button"
+import About from "./Components/About"
 
 
 const Nsj = Noto_Sans_Javanese({
@@ -16,6 +17,7 @@ const fo= Fugaz_One({
 export default function Home() {
 
   return (
+    <>
     <main className='bg-[#0F172A] h-screen w-screen overflow-x-hidden overflow-y-scroll relative flex justify-center items-center'>
         <div className='bg-[#6a8bd7] absolute  w-80 h-80 rounded-full blur-lg bottom-[75vh] right-[85vw] animate-pulse hover:w-96 hover:h-96 transition-all'></div>
         <div className={` w-[2px] h-[500px] bg-white absolute top-0 right-0 rotate-45 origin-top `}></div>
@@ -30,5 +32,7 @@ export default function Home() {
             <Button/>
         </div>  
     </main>
+    <About/>
+    </>
   )
 }
