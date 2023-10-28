@@ -1,18 +1,7 @@
 import React from "react"
-import { Fugaz_One } from "next/font/google"
-import { Noto_Sans_Javanese } from "next/font/google"
 import Button from "./Components/Button"
 import About from "./Components/About"
 
-
-const Nsj = Noto_Sans_Javanese({
-  weight:'500',
-  subsets:['latin']
-})
-const fo= Fugaz_One({
-  weight:'400',
-  subsets:["latin"]
-})
 
 export default function Home() {
 
