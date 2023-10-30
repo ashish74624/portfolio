@@ -1,6 +1,8 @@
 import React from "react"
 import Button from "./Components/Button"
+import Tech from "./Components/Tech"
 import About from "./Components/About"
+import Project from "./Components/Project"
 
 
 export default function Home() {
@@ -21,7 +23,9 @@ export default function Home() {
             <Button/>
         </div>  
     </main>
+    <Tech/>
     <About/>
+    <Project/>
     </>
   )
 }
