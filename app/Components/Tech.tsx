@@ -43,10 +43,10 @@ export default function Tech() {
   return (
     <section className=' w-screen h-max bg-white overflow-hidden flex flex-col items-center '>
       <h2 className=' my-8 text-4xl text-gray-800 font-semibold underline-offset-8 underline'>Tech Stack</h2>
-      <div className=' w-[900px] mx-auto grid grid-cols-3 gap-4 mb-8'>
+      <div className=' w-screen overflow-y-hidden overflow-x-scroll md:w-max mx-auto flex md:grid md:grid-cols-3 gap-4 mb-8 md:p-8 px-2'>
         {tech.map((item)=>(
           <Tilt  options={defaultOptions} >
-        <div key={item.id} className=' bg-teal-600 text-white text-xl rounded-lg h-64 w-48 flex flex-col justify-center items-center '>
+        <div key={item.id} className=' bg-teal-600 text-white text-xl rounded-lg w-36 h-56 md:h-64 md:w-48 flex flex-col justify-center items-center '>
             {item.icon}
             {item.title}
         </div>
