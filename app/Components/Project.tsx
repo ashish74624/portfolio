@@ -28,10 +28,10 @@ export default function Project() {
             {projects.map((item)=>(
                 <div key={item.id} className=' w-80 md:w-96 h-64 relative group overflow-hidden'>
                 <Image className=" w-80 md:w-96 h-64 group-hover:scale-125  transition-all duration-500" src={item.image} alt="" width={400} height={260} />
-                <div className='absolute top-11 w-80 md:w-96 h-64 bg-white opacity-0 bg-opacity-0 group-hover:top-0 group-hover:bg-opacity-100 group-hover:opacity-100 group-hover:transition-all group-hover:duration-300 text-black flex flex-col justify-center items-center text-xl  border-[#E31B6D] border-2'>
+                <div className='absolute top-11 w-80 md:w-96 h-64 bg-white opacity-0 bg-opacity-0 group-hover:top-0 group-hover:bg-opacity-100 group-hover:opacity-100 group-hover:transition-all group-hover:duration-300 text-black flex flex-col justify-center items-center text-xl  border-[#E31B6D] border-2 '>
                     <p>{item.title}</p>
                     <Dialog>
-                        <DialogTrigger className=' h-10 w-20 mt-4 text-sm bg-[#E31B6D] rounded-lg text-white'>View more</DialogTrigger>
+                        <DialogTrigger className=' h-10 w-20 mt-4 text-sm bg-[#E31B6D] rounded-lg text-white hover:outline-[#0F172A] hover:outline transition-all active:bg-[#0F172A]'>View more</DialogTrigger>
                         <DialogContent>
                             <div className=' mt-2'>
                                 <Slider img1={item.img1} img2={item.img2} img3={item.img3} img4={item.img4} img5={item.img5}/>
@@ -41,7 +41,7 @@ export default function Project() {
                                 <h2 className='text-3xl text-gray-500'>{item.desc}</h2>
                                 <div className=' w-52 flex justify-between h-10 mt-4'>
                                 <a href={item.link} target="_blank" rel="noopener noreferrer">
-                                    <button className='h-10 text-white w-20 text-sm bg-[#E31B6D] rounded-lg'>
+                                    <button className='h-10 text-white w-20 text-sm bg-[#E31B6D] rounded-lg hover:outline-[#0F172A] hover:outline transition-all active:bg-[#0F172A]'>
                                         Visit
                                     </button>
                                 </a>
