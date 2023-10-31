@@ -41,7 +41,7 @@ export default function Tech() {
     {id:10,title:"Mongo Db",icon:<Mongo/>},
   ]
   return (
-    <section className=' w-[99vw] h-max bg-white overflow-x-hidden overflow-y-scroll flex flex-col items-center '>
+    <section className=' w-screen h-max bg-white overflow-hidden flex flex-col items-center '>
       <h2 className=' my-8 text-4xl text-gray-800 font-semibold underline-offset-8 underline'>Tech Stack</h2>
       <div className=' w-[900px] mx-auto grid grid-cols-3 gap-4 mb-8'>
         {tech.map((item)=>(
