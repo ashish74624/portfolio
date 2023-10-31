@@ -1,6 +1,16 @@
 'use client'
 import React from 'react'
 import { Tilt } from 'react-tilt'
+import Html from '../Icons/Html'
+import Css from '../Icons/Css'
+import Js from '../Icons/Js'
+import Tailwind from '../Icons/Tailwind'
+import ReactIcon from '../Icons/React'
+import ReactRouter from '../Icons/ReactRouter'
+import Next from '../Icons/Next'
+import Node from '../Icons/Node'
+import Express from '../Icons/Express'
+import Mongo from '../Icons/Mongo'
 
 export default function Tech() {
 
@@ -19,16 +29,16 @@ export default function Tech() {
 
 
   const tech =[
-    {id:1,title:"Html"},
-    {id:2,title:"Css"},
-    {id:3,title:"JavaScript"},
-    {id:4,title:"Tailwind Css"},
-    {id:5,title:"React"},
-    {id:6,title:"React Router"},
-    {id:7,title:"Next Js"},
-    {id:8,title:"Node Js"},
-    {id:9,title:"Express js"},
-    {id:10,title:"Mongo Db"},
+    {id:1,title:"Html",icon:<Html/>},
+    {id:2,title:"Css",icon:<Css/>},
+    {id:3,title:"JavaScript",icon:<Js/>},
+    {id:4,title:"Tailwind Css",icon:<Tailwind/>},
+    {id:5,title:"React",icon:<ReactIcon/>},
+    {id:6,title:"React Router",icon:<ReactRouter/>},
+    {id:7,title:"Next Js",icon:<Next/>},
+    {id:8,title:"Node Js",icon:<Node/>},
+    {id:9,title:"Express js",icon:<Express/>},
+    {id:10,title:"Mongo Db",icon:<Mongo/>},
   ]
   return (
     <section className=' w-[99vw] h-max bg-white overflow-x-hidden overflow-y-scroll flex flex-col items-center '>
@@ -37,6 +47,7 @@ export default function Tech() {
         {tech.map((item)=>(
           <Tilt  options={defaultOptions} >
         <div key={item.id} className=' bg-teal-600 text-white text-xl rounded-lg h-64 w-48 flex flex-col justify-center items-center '>
+            {item.icon}
             {item.title}
         </div>
         </Tilt>
