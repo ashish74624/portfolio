@@ -19,7 +19,7 @@ export default function Home() {
         <div className='z-10 flex flex-col justify-center w-[360px] md:w-[610px] lg:bg-none bg-[#0F172A] h-52 border-white border rounded-lg  py-8 relative '>
             <span className=' w-4 h-4 rounded-full bg-white absolute bottom-[200px] left-[351px] md:left-[601px] animate-ping'></span>
             <p className='text-white text-2xl md:text-4xl w-max mx-auto'>
-                Hello There, <span className='text-[#E31B6D]'>I'm Ashish Kumar</span>. <br />
+                Hello There, <span className='text-[#E31B6D]'>I&#39;m Ashish Kumar</span>. <br />
                 I am a full stack web Developer.
             </p>
             <Button/>
