@@ -5,10 +5,10 @@ export default function Tailwind() {
     <svg width="80px" height="80px" viewBox="0 -51 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
     <defs>
         <linearGradient x1="-2.77777778%" y1="32%" x2="100%" y2="67.5555556%" id="linearGradient-1">
-            <stop stop-color="#2298BD" offset="0%">
+            <stop stopColor="#2298BD" offset="0%">
 
 </stop>
-            <stop stop-color="#0ED7B5" offset="100%">
+            <stop stopColor="#0ED7B5" offset="100%">
 
 </stop>
         </linearGradient>
