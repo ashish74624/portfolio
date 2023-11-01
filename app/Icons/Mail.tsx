@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Mail() {
   return (
-    <svg width="40px" height="40px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+    <svg width="30px" height="30px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <style>{`.cls-1{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}`}</style>
       </defs>
