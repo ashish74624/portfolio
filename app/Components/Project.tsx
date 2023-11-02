@@ -12,11 +12,11 @@ import Github from '../Icons/Github'
 export default function Project() {
     
     const projects =[
-        {id:1,title:"Solids",desc:"An Ecommerce Website",stack:"Next js/Kinde Auth",image:"/solids.png",img1:"/s1.png",img2:"/s2.png",img3:"/s3.png",img4:"/s4.png",img5:"/s5.png",github:"https://github.com/ashish74624/Ecommerce",link:"https://solids.vercel.app/"},
-        {id:2,title:"Poloroid",desc:"A Social media Website",stack:"Next js/Express Js/Mongo Db",image:"/poloroid.png",img1:"/poloroid.png",img2:"/p2.png",img3:"/p3.png",img4:"/p4.png",img5:"/p5.png",github:"https://github.com/ashish74624/MERNsocial",link:"https://poloroid.vercel.app/"},
-        {id:3,title:"Image Drop",desc:"A Image drop and retrieve website",stack:"React/Express js/Mongo Db",image:"/img.png",img1:"/img.png",img2:"/i2.png",img3:"/i3.png",img4:"/i4.png",img5:"/i5.png",github:"https://github.com/ashish74624/ImageUploader",link:"https://imagedrop.vercel.app/"},
-        {id:4,title:"UpFront",desc:"A News website",stack:"Next js",image:"/upfront.png",img1:"/upfront.png",img2:"/u2.png",img3:"/u3.png",img4:"/u4.png",img5:"/u5.png",github:"https://github.com/ashish74624/UpFront",link:"https://upfront-fawn.vercel.app/"},
-        {id:5,title:"Weather",desc:"A simple weather app",stack:"React Js",image:"/wether.png",img1:"/wether.png",img2:"/w2.png",img3:"/w3.png",img4:undefined,img5:undefined,github:"https://github.com/ashish74624/weather",link:"https://ashish74624.github.io/weather/"},
+        {id:1,title:"Solids",desc:"An Ecommerce Website",stack:"Next js | Tailwind Css | Kinde Auth",image:"/solids.png",img1:"/s1.png",img2:"/s2.png",img3:"/s3.png",img4:"/s4.png",img5:"/s5.png",github:"https://github.com/ashish74624/Ecommerce",link:"https://solids.vercel.app/"},
+        {id:2,title:"Poloroid",desc:"A Social media Website",stack:"Next js | Tailwind Css | Express Js | Mongo Db",image:"/poloroid.png",img1:"/poloroid.png",img2:"/p2.png",img3:"/p3.png",img4:"/p4.png",img5:"/p5.png",github:"https://github.com/ashish74624/MERNsocial",link:"https://poloroid.vercel.app/"},
+        {id:3,title:"Image Drop",desc:"A Image drop and retrieve website",stack:"React | Tailwind Css |  Express js | Mongo Db",image:"/img.png",img1:"/img.png",img2:"/i2.png",img3:"/i3.png",img4:"/i4.png",img5:"/i5.png",github:"https://github.com/ashish74624/ImageUploader",link:"https://imagedrop.vercel.app/"},
+        {id:4,title:"UpFront",desc:"A News website",stack:"Next js | Tailwind Css",image:"/upfront.png",img1:"/upfront.png",img2:"/u2.png",img3:"/u3.png",img4:"/u4.png",img5:"/u5.png",github:"https://github.com/ashish74624/UpFront",link:"https://upfront-fawn.vercel.app/"},
+        {id:5,title:"Weather",desc:"A simple weather app",stack:"React Js | Tailwind Css",image:"/wether.png",img1:"/wether.png",img2:"/w2.png",img3:"/w3.png",img4:undefined,img5:undefined,github:"https://github.com/ashish74624/weather",link:"https://ashish74624.github.io/weather/"},
     ]
 
   return (
@@ -38,7 +38,8 @@ export default function Project() {
                             </div>
                             <div>
                                 <h2 className=' text-4xl text-gray-800'>{item.title}</h2>
-                                <h2 className='text-3xl text-gray-500'>{item.desc}</h2>
+                                <h3 className='text-3xl text-gray-500'>{item.desc}</h3>
+                                <h4 className=' text-lg text-black'>{item.stack}</h4>
                                 <div className=' w-52 flex justify-between h-10 mt-4'>
                                 <a href={item.link} target="_blank" rel="noopener noreferrer">
                                     <button className='h-10 text-white w-20 text-sm bg-[#E31B6D] rounded-lg hover:outline-[#0F172A] hover:outline transition-all active:bg-[#0F172A]'>
