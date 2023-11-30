@@ -11,7 +11,6 @@ export default function Home() {
 
   return (
     <>
-    <head></head>
     <main>
       <section className='bg-[#0F172A] h-screen w-screen overflow-hidden relative flex justify-center items-center'>
           <div className='bg-[#6a8bd7] absolute  w-80 h-80 rounded-full blur-lg bottom-[75vh] right-[85vw] animate-pulse hover:w-96 hover:h-96 transition-all'></div>
