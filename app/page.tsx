@@ -5,6 +5,7 @@ import Tech from "./Components/Tech"
 import About from "./Components/About"
 import Project from "./Components/Project"
 import Footer from "./Components/Footer"
+import ResumeBtn from "./Components/ResumeBtn"
 
 
 export default function Home() {
@@ -23,7 +24,10 @@ export default function Home() {
                   Hello There, <span className='text-[#E31B6D]'>I&#39;m Ashish Kumar</span>. <br />
                   I am a full stack web Developer.
               </p>
-              <Button/>
+              <div className="w-max mx-auto space-x-8  ">
+                <ResumeBtn/>
+                <Button/>
+              </div>
           </div>  
       </section>
       <Tech/>
