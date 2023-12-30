@@ -30,8 +30,8 @@ export default function Home() {
               </div>
           </div>  
       </section>
-      <Tech/>
       <About/>
+      <Tech/>
       <Project/>
     </main>
     <footer>
