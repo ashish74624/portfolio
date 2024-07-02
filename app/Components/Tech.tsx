@@ -34,7 +34,6 @@ export default function Tech() {
     {id:3,title:"JavaScript",icon:<Js/>},
     {id:4,title:"Tailwind Css",icon:<Tailwind/>},
     {id:5,title:"React",icon:<ReactIcon/>},
-    {id:6,title:"React Router",icon:<ReactRouter/>},
     {id:7,title:"Next Js",icon:<Next/>},
     {id:8,title:"Node Js",icon:<Node/>},
     {id:9,title:"Express js",icon:<Express/>},
