@@ -70,7 +70,7 @@ export default function Contact() {
                         ></textarea>
                     </div>
                     <button className='w-full bg-white py-2 rounded-2xl mt-2' type="submit">Send</button>
-                    <p className='text-white'>{status}</p>
+                    <p className='text-white mx-auto w-max'>{status}</p>
                 </form>
                 <div className='text-gray-200 w-screen px-4 lg:px-0 max-w-[500px] '>
                     <p className='text-justify'>
