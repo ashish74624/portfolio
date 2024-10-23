@@ -13,7 +13,7 @@ export default function About() {
                     <h1 className='text-white text-4xl'>Get to know Me !</h1>
                     <p className='text-gray-200 mt-5 text-lg text-justify'>
 
-                        I&apos;m a <HightLight text='Full Stack Web Developer' /> building and managing the Front-end and Back-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <LinkPreview url="#project" className="font-bold">
+                        I&apos;m a <HightLight text='Full Stack Web Developer' /> building and managing the Front-end and Back-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <LinkPreview url="https://ashish74624.vercel.app/#project" className="font-bold">
                             Projects
                         </LinkPreview> section.
                         <br /> <br />
@@ -21,7 +21,7 @@ export default function About() {
                             R.N.S Institute of Technology
                         </LinkPreview> in Bangalore , India
                         <br /> <br />
-                        I&apos;m open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don&apos;t hesitate to <LinkPreview url="#contact" className="font-bold">
+                        I&apos;m open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don&apos;t hesitate to <LinkPreview url="https://ashish74624.vercel.app/#contact" className="font-bold">
                             Contact
                         </LinkPreview> me.
                     </p>
