@@ -14,6 +14,15 @@ export const projects = [
         github: "https://github.com/ashish74624/Poloroid"
     },
     {
+        title: "AdFusion",
+        description:
+            "An Ad Server platform",
+        link: "https://ad-fusion.vercel.app/",
+        img: "/adf.png",
+        techStack: "React 19 | Tailwind Css | Express | Mongo Db",
+        github: "https://github.com/ashish74624/AdFusion"
+    },
+    {
         title: "Solids",
         description:
             "An Ecommerce platform",
@@ -49,15 +58,6 @@ export const projects = [
         techStack: "Next Js | Tailwind Css",
         github: "https://github.com/ashish74624/UpFront"
     },
-    // {
-    //     title: "ShelfWise",
-    //     description:
-    //         "An Education platform",
-    //     link: "https://shelfwise.vercel.app/",
-    //     img: "/lib.png",
-    //     techStack: "React | Tailwind Css | Express | Mongo Db",
-    //     github: "https://github.com/ashish74624/ShelfWise"
-    // },
 ];
 
 export default function Project() {
