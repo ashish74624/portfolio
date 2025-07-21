@@ -14,15 +14,6 @@ export const projects = [
         github: "https://github.com/ashish74624/Poloroid"
     },
     {
-        title: "AdFusion",
-        description:
-            "An Ad Server platform",
-        link: "https://ad-fusion.vercel.app/",
-        img: "/adf.png",
-        techStack: "React 19 | Tailwind Css | Express | Mongo Db",
-        github: "https://github.com/ashish74624/AdFusion"
-    },
-    {
         title: "Solids",
         description:
             "An Ecommerce platform",
