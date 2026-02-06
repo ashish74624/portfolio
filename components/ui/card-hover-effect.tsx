@@ -1,7 +1,6 @@
 import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import Image from "next/image";
 import Button from "../Button";
 
 export const HoverEffect = ({
@@ -11,10 +10,10 @@ export const HoverEffect = ({
   items: {
     title: string;
     description: string;
-    link: string;
-    github: string;
+    link?: string;
+    github?: string;
     img: string;
-    techStack: string;
+    subText: string;
   }[];
   className?: string;
 }) => {
@@ -57,15 +56,23 @@ export const HoverEffect = ({
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
             <p className="text-blueDash text-sm">
-              {item.techStack}
+              {item.subText}
             </p>
             <div className="flex gap-6 justify-center mt-4">
-              <a href={item.link} target="_blank">
-                <Button text="View" />
-              </a>
-              <a href={item.github} target="_blank">
-                <Button text="Github" />
-              </a>
+              {
+                item.link &&
+                <a href={item.link} target="_blank">
+                  <Button text="View" />
+                </a>
+              }
+              {
+                item.github &&
+                <a href={item.github} target="_blank">
+                  <Button text="Github" />
+                </a>
+              }
+
+
             </div>
           </Card>
         </div>

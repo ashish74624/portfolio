@@ -10,7 +10,7 @@ export const projects = [
             "A Social Media Platform.",
         link: "https://poloroid.vercel.app/",
         img: "/poloroid.png",
-        techStack: "React | Tailwind Css | Express | Mongo Db",
+        subText: "React | Tailwind Css | Express | Mongo Db",
         github: "https://github.com/ashish74624/Poloroid"
     },
     {
@@ -19,7 +19,7 @@ export const projects = [
             "An Ecommerce platform",
         link: "https://solids.vercel.app/",
         img: "/s.png",
-        techStack: "Next Js | Kinde Auth | Razorpay",
+        subText: "Next Js | Kinde Auth | Razorpay",
         github: "https://github.com/ashish74624/Solids"
     },
     {
@@ -28,7 +28,7 @@ export const projects = [
             "Image Uploader, Retrival Website.",
         link: "https://tech-nexus.vercel.app/",
         img: "/px.png",
-        techStack: "React | Tailwind Css | Express | Mongo Db",
+        subText: "React | Tailwind Css | Express | Mongo Db",
         github: "https://github.com/ashish74624/Pixel-Pry-TechNexus"
     },
     {
@@ -37,7 +37,7 @@ export const projects = [
             "A Library Management System",
         link: "https://shelfwise.vercel.app/",
         img: "/lms.png",
-        techStack: "Next js | Aceternity UI | Express | Mongo Db",
+        subText: "Next js | Aceternity UI | Express | Mongo Db",
         github: "https://github.com/ashish74624/ShelfWise"
     },
     {
@@ -46,7 +46,7 @@ export const projects = [
             "A news website made with next js",
         link: "https://upfront-fawn.vercel.app/",
         img: "/upfront.png",
-        techStack: "Next Js | Tailwind Css",
+        subText: "Next Js | Tailwind Css",
         github: "https://github.com/ashish74624/UpFront"
     },
 ];

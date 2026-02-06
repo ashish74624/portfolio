@@ -13,11 +13,11 @@ export default function About() {
                     <h1 className='text-white text-4xl'>Get to know Me !</h1>
                     <p className='text-gray-200 mt-5 text-lg text-justify'>
 
-                        I&apos;m a <HightLight text='Full Stack Web Developer' /> building and managing the Front-end and Back-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <LinkPreview url="https://ashish74624.vercel.app/#project" className="font-bold">
+                        I&apos;m a <HightLight text='Software Developer' /> with experience building production-grade web applications across backend and frontend. Currently an Engineering Intern at PayU, I work on Django services, production debugging, and scalable systems. Previously, I interned at Surya FinTech and Brandsmite, contributing to full-stack features, APIs, and real-world software projects. Check out some of my work in the <LinkPreview url="https://ashish74624.vercel.app/#project" className="font-bold">
                             Projects
                         </LinkPreview> section.
                         <br /> <br />
-                        I&apos;m currently persuing my B.E in Information Science and Engineering from <LinkPreview url="http://rnsit.ac.in/" className="font-bold">
+                        I have completed my B.E in Information Science and Engineering from <LinkPreview url="http://rnsit.ac.in/" className="font-bold">
                             R.N.S Institute of Technology
                         </LinkPreview> in Bangalore , India
                         <br /> <br />

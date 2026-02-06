@@ -7,6 +7,7 @@ import About from "./sections/About";
 import Project from "./sections/Project";
 import Button from "@/components/Button";
 import Contact from "@/app/sections/Contact"
+import Experience from "./sections/Experience";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
             I&apos;m Ashish Kumar
           </div>
           <div className="font-extralight text-base md:text-4xl dark:text-blueDash md:py-4">
-            Full Stack Web Developer
+            Software Developer
           </div>
           <div className="flex gap-4 md:mt-0 mt-2">
             <a href="/resume.pdf" target="_blank">
@@ -39,6 +40,7 @@ export default function Home() {
         </motion.div>
       </main>
       <About />
+      <Experience />
       <Project />
       <Contact />
     </AuroraBackground>
