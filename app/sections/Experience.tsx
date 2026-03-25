@@ -4,10 +4,16 @@ import React from 'react'
 
 export const projects = [
     {
+        title: "Symb Technologies",
+        description: "Software Engineer Trainee",
+        img: "/symb.jfif",
+        subText: "March 2026 - Current",
+    },
+    {
         title: "PayU",
         description: "Engineering Intern",
         img: "/payu.webp",
-        subText: "Aug 2025 - Current",
+        subText: "Aug 2025 - Feb 2026",
     },
     {
         title: "Surya Fintech",
