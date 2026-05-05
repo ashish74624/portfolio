@@ -5,6 +5,14 @@ import Heading from '@/components/Heading';
 
 export const projects = [
     {
+        title: "DocQuery AI",
+        description: "GenAI RAG Tooling Platform",
+        link: "https://doc-query-ai-six.vercel.app/",
+        img: "/dq.png",
+        subText: "LangChain, LangGraph, FAISS, Fast API",
+        github: "https://github.com/ashish74624/DocQueryAI"
+    },
+    {
         title: "Poloroid",
         description:
             "A Social Media Platform.",
