@@ -34,7 +34,7 @@ export default function Experience() {
 
 
     return (
-        <section className=' w-full flex flex-col z-50' id='project'>
+        <section className=' w-full flex flex-col z-50' id='experience'>
             <Heading heading='Work Experience' />
             <div className="max-w-5xl h-max mx-auto ">
                 <HoverEffect items={projects} />

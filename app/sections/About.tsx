@@ -13,17 +13,15 @@ export default function About() {
                     <h1 className='text-white text-4xl'>Get to know Me !</h1>
                     <p className='text-gray-200 mt-5 text-lg text-justify'>
 
-                        I&apos;m a <HightLight text='Software Developer' /> with experience building production-grade web applications across backend and frontend. Currently an Engineering Intern at PayU, I work on Django services, production debugging, and scalable systems. Previously, I interned at Surya FinTech and Brandsmite, contributing to full-stack features, APIs, and real-world software projects. Check out some of my work in the <LinkPreview url="https://ashish74624.vercel.app/#project" className="font-bold">
-                            Projects
-                        </LinkPreview> section.
-                        <br /> <br />
-                        I have completed my B.E in Information Science and Engineering from <LinkPreview url="http://rnsit.ac.in/" className="font-bold">
-                            R.N.S Institute of Technology
-                        </LinkPreview> in Bangalore , India
-                        <br /> <br />
-                        I&apos;m open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don&apos;t hesitate to <LinkPreview url="https://ashish74624.vercel.app/#contact" className="font-bold">
-                            Contact
-                        </LinkPreview> me.
+                        I&apos;m a <HightLight text='Software Developer' /> with experience building production-grade, scalable web applications across backend and frontend. Currently working as a Software Engineer Trainee at SYMB, I focus on full-stack development using React and Django, writing clean, modular, and maintainable code.
+
+                        Previously, as an Engineering Intern at PayU, I worked on real-world fintech systems—building async workflows with Celery, designing secure APIs, handling production incidents under SLA, and developing data pipelines for large-scale financial reporting. I&apos;ve also contributed to full-stack systems and reusable UI components during my internships at Surya FinTech and Brandsmite.
+
+                        Check out some of my work in the <LinkPreview url="https://ashish74624.vercel.app/#project" className="font-bold">Projects</LinkPreview> section.
+                        <br /><br />
+                        I completed my B.E in Information Science and Engineering from <LinkPreview url="http://rnsit.ac.in/" className="font-bold">R.N.S Institute of Technology</LinkPreview>, Bangalore.
+                        <br /><br />
+                        I&apos;m actively looking for Software Engineering roles where I can build impactful systems, solve real-world problems, and grow as an engineer. If you have an opportunity that aligns with my skills, feel free to <LinkPreview url="https://ashish74624.vercel.app/#contact" className="font-bold">Contact</LinkPreview> me.
                     </p>
                 </div>
 
